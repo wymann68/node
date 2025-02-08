@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SongSons - Générateur de Musique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h1>SongSons</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Search</a></li>
+                </ul>
+            </nav>
+            <button class="invite">Invite Friends</button>
+        </aside>
+        <main class="content">
+            <h2>Créer une Musique</h2>
+            <input type="text" id="lyrics" placeholder="Entrez vos paroles...">
+            <select id="musicStyle">
+                <option value="pop">Pop Urbaine</option>
+                <option value="rock">Rock Vintage</option>
+                <option value="electro">Électronique</option>
+            </select>
+            <button id="generate">Générer</button>
+            <div id="output"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
