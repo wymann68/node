@@ -30,4 +30,13 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}            - nom : Première interaction
+  utilisations : actions/first-interaction@v1.3.0
+  avec:
+    # Jeton pour le référentiel. Peut être transmis à l'aide de {{ secrets.GITHUB_TOKEN }}
+    jeton de dépôt :
+    # Commentaire à publier sur le premier problème d'un individu
+    message d'erreur : # facultatif
+    # Commentaire à publier sur la première pull request d'un individu
+    pr-message: # facultatif
+          
