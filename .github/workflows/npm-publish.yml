@@ -39,4 +39,23 @@ jobs:
     message d'erreur : # facultatif
     # Commentaire à publier sur la première pull request d'un individu
     pr-message: # facultatif
+                      - nom : Installation du SDK .NET Core
+  utilisations : actions/setup-dotnet@v4.3.0
+  avec:
+    # Version(s) facultative(s) du SDK à utiliser. Si elle n'est pas fournie, la version global.json sera installée lorsqu'elle sera disponible. Exemples : 2.2.104, 3.1, 3.1.x, 3.x, 6.0.2xx
+    dotnet-version: # facultatif
+    # Qualité optionnelle de la construction. Les valeurs possibles sont : daily, signed, validated, preview, ga.
+    dotnet-quality : # facultatif
+    # Emplacement global.json facultatif, si votre global.json n'est pas situé à la racine du dépôt.
+    global-json-file: # facultatif
+    # Source de package facultative pour laquelle configurer l'authentification. Consultera tout NuGet.config existant à la racine du dépôt et fournira un NuGet.config temporaire à l'aide de la variable d'environnement NUGET_AUTH_TOKEN comme mot de passe ClearText
+    source-url: # facultatif
+    # PROPRIÉTAIRE facultatif pour l'utilisation de packages provenant d'organisations/utilisateurs du registre de packages GitHub autres que le propriétaire actuel du référentiel. Utilisé uniquement si une URL GPR est également fournie dans l'URL source
+    propriétaire : # facultatif
+    # Emplacement NuGet.config facultatif, si votre NuGet.config ne se trouve pas à la racine du référentiel.
+    fichier de configuration : # facultatif
+    # Entrée facultative pour activer la mise en cache du dossier global-packages de NuGet
+    cache : # facultatif
+    # Utilisé pour spécifier le chemin d'accès à un fichier de dépendances : packages.lock.json. Prend en charge les caractères génériques ou une liste de noms de fichiers pour la mise en cache de plusieurs dépendances.
+    cache-dependency-path: # facultatif
           
